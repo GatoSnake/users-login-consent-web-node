@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 Login Page
+  div
+    form(method='POST', action='/login')
+      input(type='email', name='email', placeholder='Email', required=true)
+      br
+      br
+      input(type='password', name='password', placeholder='Password', required=true)
+      br
+      br
+      input(type='submit', value='Iniciar sesion')
+      br
+      p #{result}
