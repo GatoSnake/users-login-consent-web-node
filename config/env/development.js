@@ -2,5 +2,6 @@ module.exports = {
   session: {
     secret: 'abc123'
   },
-  db: 'mongodb://localhost:27017/database-dev'
+  db_url: 'mongodb://192.168.57.2:27017/users-login-dev',
+  hydra_url: 'https://192.168.57.2:9001'
 };

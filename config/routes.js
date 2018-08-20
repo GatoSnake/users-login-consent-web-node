@@ -1,12 +1,16 @@
 const index = require('../app/routes/index');
+const login = require('../app/routes/login');
+const consent = require('../app/routes/consent');
 
 module.exports = (app) => {
 
   // Check authentication user
-  app.all('*', checkAuth);
+  //app.all('*', checkAuth);
 
   //all routes
   app.use('/', index);
+  app.use('/login', login);
+  app.use('/consent', consent);
 
   // Function verify if user is authenticated
   function checkAuth(req, res, next) {

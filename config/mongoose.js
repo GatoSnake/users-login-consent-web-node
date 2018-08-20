@@ -5,7 +5,7 @@ const logger = rootRequire('./config/logger');
 module.exports = () => {
 
   // connect to mongodb
-  mongoose.connect(config.db, {
+  mongoose.connect(config.db_url, {
     useNewUrlParser: true
   });
   mongoose.Promise = global.Promise;
